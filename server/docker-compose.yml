@@ -1,0 +1,36 @@
+
+services:
+  app:
+   tty: true # keeps the container running and for interacting with the CLI
+   restart: always
+   image: emergency_queue
+   container_name: emergency_queue
+   build: .
+   ports:
+    - 3000:3000
+   env_file:
+   - .env
+   networks:
+    - application
+   depends_on:
+    - mongodb
+   volumes:
+    - .:/src/app
+   command: air -c .air.toml
+
+  mongodb:
+    restart: always
+    image: mongo
+    container_name: emergency_queue-db
+    ports:
+     - 27017:27017
+    networks:
+      - application
+    volumes:
+      - mongodb:/data/db
+    
+volumes:
+  mongodb:
+
+networks:
+  application:
