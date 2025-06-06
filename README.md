@@ -18,6 +18,9 @@ Backend Server:
 Mobile UI:
 ![React Native](https://img.shields.io/badge/-React%20Native-20232A?logo=react&logoColor=61DAFB&style=for-the-badge) ![Expo](https://img.shields.io/badge/-Expo-000020?logo=expo&logoColor=white&style=for-the-badge) ![Tamagui](https://img.shields.io/badge/-Tamagui-14B8A6?style=for-the-badge)
 
+Database: ![MongoDB Logo](https://www.mongodb.com/assets/images/global/favicon.ico)
+
+
 Containerisation:
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
 
